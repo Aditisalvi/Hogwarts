@@ -25,7 +25,7 @@ This page if for admin to add a new result, delete and modify an existing result
 
 ## Steps followed for deployment
 
-#### Step 1 — Installing Apache
+### Step 1 — Installing Apache
 * Updating the local package index to reflect the latest upstream changes
 ```
 sudo apt update
@@ -36,7 +36,7 @@ sudo apt update
 sudo apt install apache2
 ```
 
-#### Step 2 — Adjusting the Firewall
+### Step 2 — Adjusting the Firewall
 * Before testing Apache, it’s necessary to modify the firewall settings to allow outside access to the default web ports. First, list the ufw application profiles -
 ```
 sudo ufw app list
@@ -52,7 +52,7 @@ sudo ufw allow 'Apache'
 sudo ufw status
 ```
 
-#### Step 3 — Checking your Web Server
+### Step 3 — Checking your Web Server
 * The web server should be up and running.
 Check with the systemd init system to make sure the service is running.
 ```
@@ -69,7 +69,7 @@ hostname -I
 http://your_server_ip
 ```
 
-#### Step 4 — Setting Up Virtual Hosts
+### Step 4 — Setting Up Virtual Hosts
 * When using the Apache web server, you can use virtual hosts (similar to server blocks in Nginx) to encapsulate configuration details and host more than one domain from a single server. 
 Create the directory for your_domain(your website name) -
 ```
