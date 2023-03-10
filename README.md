@@ -140,3 +140,6 @@ sudo apache2ctl configtest
 sudo systemctl restart apache2
 ```
 
+After following all the steps, the website will be deployed.
+
+By Frank Lopez & Aditi Salvi
