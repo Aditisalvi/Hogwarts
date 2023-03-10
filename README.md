@@ -1,7 +1,7 @@
 # Hogwarts - Exam Management System
 
 ## Website
-#### URL - (https://hogwarts-result.000webhostapp.com/)
+#### URL - https://hogwarts-result.000webhostapp.com/
 The website is deployed using apache from ubuntu server.
 
 This website is about exam management system which can be used by students and operated by the professors and admin.
