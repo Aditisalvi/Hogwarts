@@ -24,9 +24,9 @@ This page if for admin to add a new result, delete and modify an existing result
 
 #### Step 1 — Installing Apache
 * Updating the local package index to reflect the latest upstream changes
-'''
+```
 sudo apt update
-'''
+```
 
 * Installing apache web server
 '''
