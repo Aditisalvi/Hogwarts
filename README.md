@@ -73,22 +73,22 @@ http://your_server_ip
 * When using the Apache web server, you can use virtual hosts (similar to server blocks in Nginx) to encapsulate configuration details and host more than one domain from a single server. 
 Create the directory for your_domain(your website name) -
 ```
-sudo mkdir /var/www/your_domain
+sudo mkdir /var/www/hogwarts-result.000webhostapp.com
 ```
 
 * Assign ownership of the directory with the $USER environment variable -
 ```
-sudo chown -R $USER:$USER /var/www/your_domain
+sudo chown -R $USER:$USER /var/www/hogwarts-result.000webhostapp.com
 ```
 
 * The permissions of your web roots should be correct if you haven’t modified your umask value, which sets default file permissions. To ensure that type - 
 ```
-sudo chmod -R 755 /var/www/your_domain
+sudo chmod -R 755 /var/www/hogwarts-result.000webhostapp.com
 ```
 
 * Create a sample index.html page using nano - 
 ```
-sudo nano /var/www/your_domain/index.html
+sudo nano /var/www/hogwarts-result.000webhostapp.com/index.html
 ```
 
 * Add the following sample HTML
@@ -105,16 +105,16 @@ sudo nano /var/www/your_domain/index.html
 
 * In order for Apache to serve this content, it’s necessary to create a virtual host file at /etc/apache2/sites-available/your_domain.conf:
 ```
-sudo nano /etc/apache2/sites-available/your_domain.conf
+sudo nano /etc/apache2/sites-available/hogwarts-result.000webhostapp.com.conf
 ```
 
 * Paste in the following configuration block -
 ```
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
-    ServerName your_domain
-    ServerAlias www.your_domain
-    DocumentRoot /var/www/your_domain
+    ServerName hogwarts-result.000webhostapp.com
+    ServerAlias www.hogwarts-result.000webhostapp.com
+    DocumentRoot /var/www/hogwarts-result.000webhostapp.com
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
@@ -122,7 +122,7 @@ sudo nano /etc/apache2/sites-available/your_domain.conf
 
 * Enable the file with the a2ensite tool
 ```
-sudo a2ensite your_domain.conf
+sudo a2ensite hogwarts-result.000webhostapp.com.conf
 ```
 
 * Disable the default site defined in 000-default.conf -
@@ -142,4 +142,4 @@ sudo systemctl restart apache2
 
 After following all the steps, the website will be deployed.
 
-Project by Frank Lopez & Aditi Salvi
+Project by Frank Lopes & Aditi Salvi
