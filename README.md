@@ -142,4 +142,4 @@ sudo systemctl restart apache2
 
 After following all the steps, the website will be deployed.
 
-By Frank Lopez & Aditi Salvi
+Project by Frank Lopez & Aditi Salvi
